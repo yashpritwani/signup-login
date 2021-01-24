@@ -1,0 +1,42 @@
+<html>
+<head><title>Knowledge Hub </title>
+<link rel="stylesheet" href="/stylesheets/design.css">
+</head>
+<body>
+   <div class="lrsl">
+<div class="thnk">
+   <p></p>
+<div class="txth2">
+   Hye <%= record1.name %> kukura finally eita dekhi paruchu taheley sucess hei gala aau baki details email re patha heba jiye b login kariba but eina jai heini jadi heba ta tora ei email <%= record1.email %> ku jiba , kukura dein pada nija chhata ku jaiki:-)!!!! 
+   Ei sabu kukura gudaka already asi sarichanti eithi test karibaku samastanku dhanyavad aau bhala heichi kahiba jaagah re 10 rs donation dei deba eita mora gpay number 8456984870 ,  dana hi manisa ra dharma :-)
+</div>
+</div>
+</div>
+<table class = "table">
+   <thead>
+   <tr>
+   <th>NAME</th>
+   <th>EMAIL</th>
+   <th>CNTCT NMBR</th>
+   <th>DOB</th>
+   </tr>
+   <tr>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>(ddmmyyyy)</th>
+   </tr>
+   <% if (records !==''){ %>
+   <% records.forEach(function(row){ %>
+      <tr>
+        <td><%= row.name %></td>
+        <td><%= row.email %></td>
+        <td><%= row.cno %></td>
+        <td><%= row.dob %></td>
+      </tr>
+   <% }) %>
+   <% } %>
+   </thead>
+   </table>
+</body>
+   </html>
